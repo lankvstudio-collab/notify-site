@@ -7,11 +7,38 @@
 
 <script>
 const messages = [
-  "🏠 Khách ở Thủ Đức vừa vệ sinh 2 máy lạnh",
-  "❄️ Khách ở Bình Chánh đặt lịch sửa máy lạnh Panasonic",
-  "🧹 Khách ở Gò Vấp vừa hoàn tất thanh toán",
-  "🔥 Nhiều khách đang đặt lịch vệ sinh máy lạnh hôm nay!"
+  "🏠 Khách ở Thủ Đức vừa vệ sinh 2 máy lạnh — Anh Tuấn (0902 22 xxxx)",
+  "❄️ Khách ở Bình Chánh đặt lịch sửa máy lạnh Panasonic — Chị Lan (0975 63 xxxx)",
+  "🧹 Khách ở Gò Vấp vừa hoàn tất thanh toán — Anh Minh (0933 88 xxxx)",
+  "🔥 Nhiều khách đang đặt lịch vệ sinh máy lạnh hôm nay! — Tổng đài Ngọc Khang",
+  "🌬️ Khách ở Bình Tân vừa vệ sinh 3 máy lạnh — Anh Phát (0908 71 xxxx)",
+  "🧊 Khách ở Quận 7 đặt lịch sửa máy lạnh Daikin — Chị Hương (0919 42 xxxx)",
+  "💧 Khách ở Tân Phú vừa đặt lịch vệ sinh định kỳ — Anh Dũng (0905 55 xxxx)",
+  "🔧 Khách ở Quận 12 vừa thay gas máy lạnh — Anh Sơn (0972 77 xxxx)",
+  "🏡 Khách ở Bình Thạnh vệ sinh máy lạnh inverter — Chị My (0934 29 xxxx)",
+  "🌡️ Khách ở Phú Nhuận vừa đặt lịch sửa máy lạnh Toshiba — Anh Lộc (0903 66 xxxx)",
+  "🧺 Khách ở Hóc Môn đặt vệ sinh 2 máy lạnh — Chị Hoa (0987 32 xxxx)",
+  "❄️ Khách ở Quận 8 vừa đặt lịch bảo dưỡng máy lạnh — Anh Vinh (0909 47 xxxx)",
+  "🔥 Khách ở Quận 10 vừa sửa xong máy lạnh — Anh Khải (0937 21 xxxx)",
+  "🏠 Khách ở Bình Dương đặt lịch vệ sinh 4 máy — Anh Thắng (0902 41 xxxx)",
+  "🧹 Khách ở Thủ Đức vệ sinh máy lạnh Samsung — Chị Nhung (0918 54 xxxx)",
+  "💨 Khách ở Quận 9 vừa đặt lịch sửa máy lạnh LG — Anh Quý (0971 63 xxxx)",
+  "🧊 Khách ở Củ Chi vệ sinh máy lạnh — Anh Hào (0907 28 xxxx)",
+  "🏡 Khách ở Quận 11 đặt lịch thay gas máy lạnh — Anh Long (0932 57 xxxx)",
+  "🌬️ Khách ở Nhà Bè vừa đặt vệ sinh máy lạnh — Chị Yến (0905 96 xxxx)",
+  "❄️ Khách ở Tân Bình sửa máy lạnh không lạnh — Anh Khang (0913 24 xxxx)",
+  "🧹 Khách ở Quận 5 vệ sinh máy lạnh treo tường — Chị Hòa (0978 53 xxxx)",
+  "🔧 Khách ở Quận 3 sửa máy lạnh Panasonic — Anh Duy (0909 12 xxxx)",
+  "💧 Khách ở Bình Chánh đặt lịch vệ sinh — Anh Lâm (0939 66 xxxx)",
+  "🌡️ Khách ở Thủ Đức vệ sinh máy lạnh âm trần — Anh Trọng (0981 45 xxxx)",
+  "🏠 Khách ở Quận 6 vừa đặt lịch bảo dưỡng — Chị Mai (0904 73 xxxx)",
+  "🧊 Khách ở Bình Tân sửa máy lạnh Toshiba — Anh Phước (0979 18 xxxx)",
+  "💨 Khách ở Hóc Môn đặt vệ sinh máy lạnh — Anh Toàn (0916 59 xxxx)",
+  "🧹 Khách ở Quận 2 vệ sinh 2 máy lạnh Daikin — Chị Thảo (0935 84 xxxx)",
+  "❄️ Khách ở Bình Dương đặt lịch vệ sinh máy lạnh — Anh Hiếu (0908 46 xxxx)",
+  "🔥 Khách ở Quận 9 vừa đặt lịch sửa máy lạnh — Chị Vy (0976 31 xxxx)"
 ];
+
 let i = 0;
 setInterval(() => {
   i = (i + 1) % messages.length;
