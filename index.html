@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0;">
+<div id="notify" style="font-family:sans-serif;font-size:14px;background:#f8fff8;border:1px solid #0a0;padding:5px;text-align:center;">
+  🧹 Có khách ở Bình Tân vừa đặt lịch vệ sinh máy lạnh
+</div>
+
+<script>
+const messages = [
+  "🏠 Khách ở Thủ Đức vừa vệ sinh 2 máy lạnh",
+  "❄️ Khách ở Bình Chánh đặt lịch sửa máy lạnh Panasonic",
+  "🧹 Khách ở Gò Vấp vừa hoàn tất thanh toán",
+  "🔥 Nhiều khách đang đặt lịch vệ sinh máy lạnh hôm nay!"
+];
+let i = 0;
+setInterval(() => {
+  i = (i + 1) % messages.length;
+  document.getElementById("notify").innerText = messages[i];
+}, 5000);
+</script>
+</body>
+</html>
